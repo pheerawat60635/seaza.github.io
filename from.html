@@ -47,10 +47,10 @@
   <p id="response"></p>
   <script>
     const form = document.getElementById('response');
-    const resposEl = document.getElementById('response');
+    const responsEl = document.getElementById('response');
     from.onsubmit = e =>{
     e.preventDefault();
-      fetch('https://script.google.com/macros/s/AKfycbxXUpAaRHo3iZWpNTluEFEMOWMKnl8ggVFE6oOxwSfZ0Br9b68p-DyKe3hg-QHNjNI/exec'
+      fetch('https://script.google.com/macros/s/AKfycbxXUpAaRHo3iZWpNTluEFEMOWMKnl8ggVFE6oOxwSfZ0Br9b68p-DyKe3hg-QHNjNI/exec',
       {
         mathod: 'POST',
           body: new UPLSearchParms(NEW FormData(form))
