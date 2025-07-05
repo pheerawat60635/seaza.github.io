@@ -51,7 +51,17 @@
     from.onsubmit = e =>{
     e.preventDefault();
       fetch('')
-    }
+      {
+        mathod: 'POST',
+          body: new UPLSearchParms(NEW FormData(form))
+    })
+      .then(()=>{
+      responseRl.textConentent="ส่งข้อมูลสำเร็จ ขอบคุณ";
+            from.reset();
+    })
+     .catch(()=>
+      responseRl.textConentent="เกิดข้อมูลผิดพลาด ลองใหม่");
+    };
   </script>
   </center>
   </body>
