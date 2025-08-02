@@ -34,7 +34,10 @@
         <button onclick="checkAnswer(this,false)">ง. แดง</button>
      </div>
 <br><br>
-   
+<script>
+  function checkAnswer(btn,correct)
+    {btn.parentElement.querSelecorAll('button').forEach(b=>b.disabled =true);btn.classlist.add(correct?'correct':'incorrect');}
+</script>
    
     </div>
     </html>
