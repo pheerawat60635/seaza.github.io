@@ -40,10 +40,13 @@
         <button onclick="checkAnswer(this,false)">ค. อาจจะมีแต่เล็กน้อย</button>
         <button onclick="checkAnswer(this,false)">ง. มีเยอะ</button>
      </div>   
-<script>
+
+      </div>    
+  <script>
   function checkAnswer(btn,correct)
-    {btn.parentElement.querySelectorAll('button').forEach(b=>b.disabled =true);btn.classlist.add(correct?'correct':'incorrect');}
+    {btn.parentElement.querySelectorAll('button').forEach(b=>b.disabled =true);
+     btn.classlist.add(correct?'correct':'incorrect');}
 </script>
    
-    </div>
+
     </html>
