@@ -34,6 +34,13 @@
         <button onclick="checkAnswer(this,false)">ง. แดง</button>
      </div>
 <br><br>
+     2. กุ้งทะเล มีพยาธิหรือไม่
+    <div class="choices">
+        <button onclick="checkAnswer(this,true)">ก. ไม่มี</button>
+        <button onclick="checkAnswer(this,false)">ข. มี</button>
+        <button onclick="checkAnswer(this,false)">ค. อาจจะมีแต่เล็กน้อย</button>
+        <button onclick="checkAnswer(this,false)">ง. มีเยอะ</button>
+     </div>   
 <script>
   function checkAnswer(btn,correct)
     {btn.parentElement.querSelecorAll('button').forEach(b=>b.disabled =true);btn.classlist.add(correct?'correct':'incorrect');}
